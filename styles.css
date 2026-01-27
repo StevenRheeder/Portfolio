@@ -1,0 +1,117 @@
+/* General styles */
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar styles */
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar #name {
+    font-family: Arial, sans-serif;
+    color: rgb(14, 233, 204);
+    float: left;
+    font-size: 36px;
+    padding-right: 0;
+}
+
+.navbar #work {
+    font-family: Arial, sans-serif;
+    color: black;
+    float: left;
+    font-size: 36px;
+    padding-left: 0;
+}
+
+.navbar a {
+    float: right;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 20px; 
+    color: black;
+}
+
+.navbar a:hover {
+    color: hsla(0, 0%, 0%, 0.4);
+}
+
+/* Navbar subtle lift on hover */
+.navbar a {
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+.navbar a:hover {
+    transform: translateY(-4px);
+    color: rgb(14, 233, 204);
+}
+
+/* Introduction section styles */
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+}
+
+.page-title{
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    color: rgb(14, 233, 204);
+}
+
+/* Projects section styles */
+
+.projects {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+.project-list{
+    text-align: center;
+}
+
+.project-item {
+    background-color: rgb(161, 160, 160);
+    width: 30%;
+    display: inline-block;
+    box-shadow: 14px 14px 8px rgba(0,0,0,0.48);
+    margin: 0 12px;
+    transform: translateY(0) scale(1);
+    transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.project-item:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 10px 10px 5px black;
+    background-color: rgb(14, 233, 204);
+    cursor: pointer;
+}
+
+/* Footer gentle pulse */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: footerPulse 6s ease-in-out infinite;
+}
+
