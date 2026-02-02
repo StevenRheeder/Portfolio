@@ -29,11 +29,7 @@ function Home() {
           <h1 className="hero-title">
             Hi, I'm <span className="highlight">Steven</span>
           </h1>
-          <p className="hero-subtitle">Full-Stack Developer & Designer</p>
-          <p className="hero-description">
-            I build clean, scalable web and mobile applications. 
-            Passionate about turning ideas into elegant solutions.
-          </p>
+          <p className="hero-subtitle">Full-Stack Developer</p>
           <div className="hero-buttons">
             <a href="/projects" className="btn btn-primary">View My Work</a>
             <a href="/contact" className="btn btn-secondary">Get In Touch</a>

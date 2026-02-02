@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 function Navbar() {
   return (
@@ -9,6 +10,7 @@ function Navbar() {
           <span id="name">Steven</span>
           <span id="work">Dev</span>
         </Link>
+        <ThemeToggle />
         <Link to="/contact">Contact</Link>
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
