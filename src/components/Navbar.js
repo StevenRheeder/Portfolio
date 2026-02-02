@@ -5,8 +5,10 @@ function Navbar() {
   return (
     <header>
       <div className="navbar">
-        <Link to="/" id="name">Steven</Link>
-        <Link to="/" id="work">Dev</Link>
+        <Link to="/" className="logo-link">
+          <span id="name">Steven</span>
+          <span id="work">Dev</span>
+        </Link>
         <Link to="/contact">Contact</Link>
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
