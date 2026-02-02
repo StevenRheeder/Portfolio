@@ -18,7 +18,15 @@ export function ThemeProvider({ children }) {
   }, [isDarkMode]);
 
   const toggleTheme = () => {
+    // Add transitioning class for smooth animation
+    document.body.classList.add('theme-transitioning');
+    
     setIsDarkMode(prev => !prev);
+    
+    // Remove transitioning class after animation completes
+    setTimeout(() => {
+      document.body.classList.remove('theme-transitioning');
+    }, 500);
   };
 
   return (
