@@ -11,10 +11,12 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
   color: #333;
-  transition: background 0.5s ease, color 0.5s ease;
+  transition:
+    background 0.5s ease,
+    color 0.5s ease;
 }
 
 /* Theme Transition - applies to all elements during theme switch */
@@ -22,11 +24,12 @@ body.theme-transitioning,
 body.theme-transitioning *,
 body.theme-transitioning *::before,
 body.theme-transitioning *::after {
-  transition: background 0.5s ease, 
-              background-color 0.5s ease, 
-              color 0.5s ease, 
-              border-color 0.5s ease,
-              box-shadow 0.5s ease !important;
+  transition:
+    background 0.5s ease,
+    background-color 0.5s ease,
+    color 0.5s ease,
+    border-color 0.5s ease,
+    box-shadow 0.5s ease !important;
 }
 
 /* Dark Mode Styles */
@@ -86,7 +89,11 @@ body.dark-mode .contact-cta p {
 }
 
 body.dark-mode .skill-badge {
-  background: linear-gradient(135deg, rgba(14, 233, 204, 0.2), rgba(102, 126, 234, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(14, 233, 204, 0.2),
+    rgba(102, 126, 234, 0.2)
+  );
   color: #e0e0e0;
 }
 
@@ -237,7 +244,7 @@ main {
 }
 
 .navbar .logo-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -254,14 +261,14 @@ main {
 }
 
 .navbar #name {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: rgb(14, 233, 204);
   font-size: 36px;
   font-weight: 700;
 }
 
 .navbar #work {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: #333;
   font-size: 36px;
   font-weight: 700;
@@ -280,7 +287,7 @@ main {
 }
 
 .navbar a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -318,7 +325,7 @@ main {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -329,8 +336,12 @@ main {
 }
 
 @keyframes backgroundMove {
-  0% { background-position: 0 0; }
-  100% { background-position: 60px 60px; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 60px 60px;
+  }
 }
 
 .hero-content {
@@ -432,9 +443,19 @@ main {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 /* Section Styles */
@@ -445,7 +466,11 @@ main {
   padding: 80px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(14, 233, 204, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.05),
+    rgba(14, 233, 204, 0.05)
+  );
 }
 
 .quick-about-content {
@@ -526,7 +551,7 @@ main {
 
 .section-title::after,
 .page-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 80px;
   height: 4px;
@@ -600,7 +625,7 @@ main {
 }
 
 .project-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -633,8 +658,13 @@ main {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .project-title {
@@ -659,7 +689,11 @@ main {
 }
 
 .tag {
-  background: linear-gradient(135deg, rgba(14, 233, 204, 0.15), rgba(102, 126, 234, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(14, 233, 204, 0.15),
+    rgba(102, 126, 234, 0.15)
+  );
   color: #555;
   padding: 6px 14px;
   border-radius: 20px;
@@ -762,7 +796,9 @@ main {
   padding: 35px;
   margin-bottom: 30px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .about-content > div:hover {
@@ -811,7 +847,11 @@ main {
 }
 
 .skill-badge {
-  background: linear-gradient(135deg, rgba(14, 233, 204, 0.15), rgba(102, 126, 234, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(14, 233, 204, 0.15),
+    rgba(102, 126, 234, 0.15)
+  );
   color: #333;
   padding: 10px 18px;
   border-radius: 25px;
@@ -827,7 +867,11 @@ main {
 }
 
 .skill-badge.core {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.15),
+    rgba(118, 75, 162, 0.15)
+  );
 }
 
 /* Experience Section */
@@ -877,7 +921,7 @@ main {
 }
 
 .experience-item li::before {
-  content: '▹';
+  content: "▹";
   position: absolute;
   left: 0;
   color: rgb(14, 233, 204);
@@ -1005,7 +1049,9 @@ main {
   border-radius: 20px;
   padding: 35px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .contact-info-section:hover,
@@ -1076,7 +1122,9 @@ main {
   border-radius: 20px;
   padding: 50px 60px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   width: 100%;
   max-width: 700px;
 }
@@ -1196,7 +1244,6 @@ main {
     padding: 25px;
   }
 }
-
 
 /* Footer styles */
 

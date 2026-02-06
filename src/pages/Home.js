@@ -1,26 +1,35 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import ProjectItem from '../components/ProjectItem';
+import React from "react";
+import { Link } from "react-router-dom";
+import ProjectItem from "../components/ProjectItem";
 
 function Home() {
   const featuredProjects = [
-    { 
-      id: 1, 
-      title: 'Car Part Identifier App', 
-      description: 'A mobile app that uses image recognition to identify car parts and provide detailed information about them.',
-      tags: ['Flutter / Dart', 'Python', 'POSTGRESQL'],
-      icon: '📱'
+    {
+      id: 1,
+      title: "Car Part Identifier App",
+      description:
+        "A mobile app that uses image recognition to identify car parts and provide detailed information about them.",
+      tags: ["Flutter / Dart", "Python", "POSTGRESQL"],
+      icon: "📱",
     },
-    { 
-      id: 2, 
-      title: 'Travel Planning Website', 
-      description: 'A hackathon project built in 3 days that estimates travel expenses and provides real-time weather forecasts via API integration.',
-      tags: ['HTML', 'CSS', 'JavaScript', 'Python'],
-      icon: '✈️'
-    }
+    {
+      id: 2,
+      title: "Travel Planning Website",
+      description:
+        "A hackathon project built in 3 days that estimates travel expenses and provides real-time weather forecasts via API integration.",
+      tags: ["HTML", "CSS", "JavaScript", "Python"],
+      icon: "✈️",
+    },
   ];
 
-  const quickSkills = ['Java', 'Python', 'JavaScript', 'React', 'Flutter', 'SQL'];
+  const quickSkills = [
+    "Java",
+    "Python",
+    "JavaScript",
+    "React",
+    "Flutter",
+    "SQL",
+  ];
 
   return (
     <>
@@ -31,8 +40,12 @@ function Home() {
           </h1>
           <p className="hero-subtitle">Full-Stack Developer</p>
           <div className="hero-buttons">
-            <a href="/projects" className="btn btn-primary">View My Work</a>
-            <a href="/contact" className="btn btn-secondary">Get In Touch</a>
+            <a href="/projects" className="btn btn-primary">
+              View My Work
+            </a>
+            <a href="/contact" className="btn btn-secondary">
+              Get In Touch
+            </a>
           </div>
         </div>
         <div className="scroll-indicator">
@@ -46,20 +59,26 @@ function Home() {
           <div className="quick-about-text">
             <h2 className="section-title">About Me</h2>
             <p>
-              I'm a BSc IT graduate from Richfield Graduate Institution with an 81.67% average. 
-              I love building web and mobile applications that solve real-world problems.
+              I'm a BSc IT graduate from Richfield Graduate Institution with an
+              81.67% average. I love building web and mobile applications that
+              solve real-world problems.
             </p>
             <p>
-              Based in Mossel Bay, South Africa, I'm passionate about clean code, user-friendly design, 
-              and continuous learning in the ever-evolving tech landscape.
+              Based in Mossel Bay, South Africa, I'm passionate about clean
+              code, user-friendly design, and continuous learning in the
+              ever-evolving tech landscape.
             </p>
-            <Link to="/about" className="btn btn-primary">Learn More About Me</Link>
+            <Link to="/about" className="btn btn-primary">
+              Learn More About Me
+            </Link>
           </div>
           <div className="quick-about-skills">
             <h3>Key Skills</h3>
             <div className="skills-grid">
               {quickSkills.map((skill) => (
-                <span key={skill} className="skill-badge">{skill}</span>
+                <span key={skill} className="skill-badge">
+                  {skill}
+                </span>
               ))}
             </div>
           </div>

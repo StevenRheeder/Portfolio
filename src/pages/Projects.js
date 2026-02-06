@@ -1,22 +1,24 @@
-import React from 'react';
-import ProjectItem from '../components/ProjectItem';
+import React from "react";
+import ProjectItem from "../components/ProjectItem";
 
 function Projects() {
   const allProjects = [
-    { 
-      id: 1, 
-      title: 'Car Part Identifier App', 
-      description: 'A mobile app that uses image recognition to identify car parts and provide detailed information about them.',
-      tags: ['Flutter / Dart', 'Python', 'POSTGRESQL'],
-      icon: '📱'
+    {
+      id: 1,
+      title: "Car Part Identifier App",
+      description:
+        "A mobile app that uses image recognition to identify car parts and provide detailed information about them.",
+      tags: ["Flutter / Dart", "Python", "POSTGRESQL"],
+      icon: "📱",
     },
-    { 
-      id: 2, 
-      title: 'Travel Planning Website', 
-      description: 'A hackathon project built in 3 days in Johannesburg. Estimates travel expenses and provides real-time weather forecasts via API integration. Collaborated with a team of 6 students.',
-      tags: ['HTML', 'CSS', 'JavaScript', 'Python'],
-      icon: '✈️'
-    }
+    {
+      id: 2,
+      title: "Travel Planning Website",
+      description:
+        "A hackathon project built in 3 days in Johannesburg. Estimates travel expenses and provides real-time weather forecasts via API integration. Collaborated with a team of 6 students.",
+      tags: ["HTML", "CSS", "JavaScript", "Python"],
+      icon: "✈️",
+    },
   ];
 
   return (

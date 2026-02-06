@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -30,17 +30,17 @@ function Contact() {
       //   headers: { 'Content-Type': 'application/json' },
       //   body: JSON.stringify(formData)
       // });
-      
-      console.log('Form data to be saved:', formData);
-      
+
+      console.log("Form data to be saved:", formData);
+
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+
+      setSubmitStatus("success");
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
-      console.error('Error submitting form:', error);
-      setSubmitStatus('error');
+      console.error("Error submitting form:", error);
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
@@ -105,18 +105,22 @@ function Contact() {
                 rows="5"
               />
             </div>
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="btn btn-primary submit-btn"
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
+              {isSubmitting ? "Sending..." : "Send Message"}
             </button>
-            {submitStatus === 'success' && (
-              <p className="form-status success">✓ Message sent successfully! I'll get back to you soon.</p>
+            {submitStatus === "success" && (
+              <p className="form-status success">
+                ✓ Message sent successfully! I'll get back to you soon.
+              </p>
             )}
-            {submitStatus === 'error' && (
-              <p className="form-status error">✗ Something went wrong. Please try again or email me directly.</p>
+            {submitStatus === "error" && (
+              <p className="form-status error">
+                ✗ Something went wrong. Please try again or email me directly.
+              </p>
             )}
           </form>
         </div>

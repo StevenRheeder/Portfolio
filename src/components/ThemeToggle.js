@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useTheme } from '../context/ThemeContext';
+import React, { useState } from "react";
+import { useTheme } from "../context/ThemeContext";
 
 function ThemeToggle() {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -12,13 +12,13 @@ function ThemeToggle() {
   };
 
   return (
-    <button 
-      className={`theme-toggle ${isAnimating ? 'spinning' : ''}`}
+    <button
+      className={`theme-toggle ${isAnimating ? "spinning" : ""}`}
       onClick={handleClick}
-      aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-      title={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+      aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+      title={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
     >
-      <span className="theme-icon">{isDarkMode ? '☀️' : '🌙'}</span>
+      <span className="theme-icon">{isDarkMode ? "☀️" : "🌙"}</span>
     </button>
   );
 }

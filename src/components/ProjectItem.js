@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
 function ProjectItem({ title, description, tags, icon }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -12,7 +12,7 @@ function ProjectItem({ title, description, tags, icon }) {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (itemRef.current) {
@@ -27,17 +27,19 @@ function ProjectItem({ title, description, tags, icon }) {
   }, []);
 
   return (
-    <div 
+    <div
       ref={itemRef}
-      className={`project-card ${isVisible ? 'fade-in-up' : ''}`}
+      className={`project-card ${isVisible ? "fade-in-up" : ""}`}
     >
-      <div className="project-icon">{icon || '🚀'}</div>
+      <div className="project-icon">{icon || "🚀"}</div>
       <h3 className="project-title">{title}</h3>
       <p className="project-description">{description}</p>
       {tags && (
         <div className="project-tags">
           {tags.map((tag, index) => (
-            <span key={index} className="tag">{tag}</span>
+            <span key={index} className="tag">
+              {tag}
+            </span>
           ))}
         </div>
       )}
